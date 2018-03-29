@@ -1,5 +1,5 @@
 import React from 'react';
-import FormCost from "../elements/forms/form-cost/FormCost";
+import FormCost from "../elements/forms/form-range/form-range";
 
 const Popup = (props) => {
 

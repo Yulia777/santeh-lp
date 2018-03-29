@@ -1,0 +1,16 @@
+.company-figures {
+  padding: $padding-screen;
+  color: $light-text;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    font-family: $bold;
+    margin: 0;
+    padding: $titles;
+    text-transform: uppercase;
+    &:after {
+      content: url("../images/title-wave-min.png");
+      display: block;
+    }
+  }
+}

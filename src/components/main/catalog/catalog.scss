@@ -1,0 +1,34 @@
+.catalog {
+  padding: $padding-screen;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    font-family: $bold;
+    margin: 0;
+    text-transform: uppercase;
+    &:after {
+      content: url("../images/title-wave-min.png");
+      display: block;
+    }
+  }
+  &__desc {
+    text-align: center;
+  }
+  .goods {
+    &__item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-align: center;
+      .good {
+        width: 22%;
+        img {
+          height: 140px;
+        }
+      }
+    }
+    &__btn {
+      text-align: center;
+    }
+  }
+}

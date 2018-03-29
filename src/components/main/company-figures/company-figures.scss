@@ -1,0 +1,41 @@
+.company-figures {
+  padding: $padding-screen;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    font-family: $bold;
+    margin: 0;
+    padding: $titles;
+    text-transform: uppercase;
+    &:after {
+      content: url("../images/title-wave-min.png");
+      display: block;
+    }
+  }
+  .counts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    &__item {
+      width: 25%;
+      text-align: center;
+      .number {
+        color: $main-color;
+        font-family: $bold;
+        span {
+          font-size: $big-number;
+        }
+      }
+      .desc {
+        font-weight: 600;
+      }
+      &:nth-child(2) {
+        border-right: 1px solid $border;
+        border-left: 1px solid $border;
+      }
+      &:nth-child(3) {
+        border-right: 1px solid $border;
+      }
+    }
+  }
+}
