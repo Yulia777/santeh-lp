@@ -1,0 +1,44 @@
+.header {
+  background: url("../../assets/images/fon-first-min.png")no-repeat;
+  background-position-y: 3%;
+  background-size: cover;
+  &__background {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 0;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__logo {
+    &--img {
+      height: 25px;
+    }
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  &__tel {
+    color: $light-text;
+  }
+  .call-btn {
+    border: 1px solid $light-text;
+    background: transparent;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 7px 20px;
+    color: $light-text;
+    font-size: $header-footer-text;
+    cursor: pointer;
+    &:hover {
+      background: $btn-main;
+      border: 1px solid $btn-main;
+      border-radius: 50px;
+      color: #fff;
+      transition: 0.8s;
+    }
+  }
+}

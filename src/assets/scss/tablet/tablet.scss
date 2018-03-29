@@ -1,0 +1,23 @@
+/* iPad (портретный и альбомный режимы) ----------- */
+@media only screen
+and (min-device-width : 760px)
+and (max-device-width : 1080px) {
+
+}
+
+
+/* iPad (альбомный режим) ----------- */
+@media only screen
+and (min-device-width : 760px)
+and (max-device-width : 1080px)
+and (orientation : landscape) {
+
+}
+
+/* iPad (портретный режим) ----------- */
+@media only screen
+and (min-device-width : 760px)
+and (max-device-width : 1080px)
+and (orientation : portrait) {
+
+}

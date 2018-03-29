@@ -1,0 +1,73 @@
+@import "normalize";
+@import "fonts";
+@import "variables";
+@import "icons";
+@import "../../components/popup/popup";
+@import "../../components/elements/elements";
+@import "../../components/header/header";
+@import "../../components/footer/footer";
+@import "../../components/header/wholesale-supply/wholesale-supply";
+@import "../../components/main/what-can/what-can";
+
+
+body{
+  @include main-theme-font-regular;
+  font-size: 16px;
+}
+
+.app{
+  display: flex;
+  flex-direction: row;
+}
+
+.title{
+  @include main-theme-font-regular;
+  text-align: center;
+  &::before{
+    padding-right: 10px;
+  }
+  &::after{
+    font-family: FontAwesome, sans-serif;
+    @include heart-icon;
+    font-size: 30px;
+    color: red;
+    padding-left: 10px;
+  }
+}
+.btn {
+  background: $btn-main;
+  border: 0;
+  border-radius: 50px;
+  padding: 15px 40px;
+  color: $light-text;
+  margin: 30px 0 0 0;
+  cursor: pointer;
+  &:hover {
+    background: $btn-main-hover;
+    transition: 0.8s;
+  }
+}
+.container {
+  margin: 0 auto;
+}
+
+
+@import "../../assets/scss/tablet/tablet";
+@import "../../assets/scss/mobile/mobile";
+
+
+@media (min-width:768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width:992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width:1200px) {
+  .container {
+    width: 1170px;
+  }
+}
