@@ -1,0 +1,30 @@
+.clients {
+  padding: $padding-screen;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    font-family: $bold;
+    padding: $titles;
+    margin: 0;
+    text-transform: uppercase;
+    &:after {
+      content: url("../images/title-wave-min.png");
+      display: block;
+    }
+  }
+  &__desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    ul {
+      list-style-type: none;
+      li {
+        background: url("/images/check-min.png") no-repeat;
+        padding-left: 40px;
+        background-size: 5%;
+        font-weight: 600;
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

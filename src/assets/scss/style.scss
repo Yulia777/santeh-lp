@@ -5,11 +5,12 @@
 @import "../../components/popup/popup";
 @import "../../components/elements/elements";
 @import "../../components/header/header";
-@import "../../components/footer/footer";
 @import "../../components/header/wholesale-supply/wholesale-supply";
 @import "../../components/main/company-figures/company-figures";
 @import "../../components/main/catalog/catalog";
 @import "../../components/main/range/range";
+@import "../../components/main/advantages/advantages";
+@import "../../components/main/clients/clients";
 
 
 body{
@@ -22,20 +23,6 @@ body{
   flex-direction: row;
 }
 
-.title{
-  @include main-theme-font-regular;
-  text-align: center;
-  &::before{
-    padding-right: 10px;
-  }
-  &::after{
-    font-family: FontAwesome, sans-serif;
-    @include heart-icon;
-    font-size: 30px;
-    color: red;
-    padding-left: 10px;
-  }
-}
 .btn {
   background: $btn-main;
   border: 0;

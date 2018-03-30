@@ -1,0 +1,52 @@
+.advantages {
+  padding: $padding-screen;
+  &__title {
+    font-size: $subtitle;
+    text-align: center;
+    font-family: $bold;
+    padding: $titles;
+    margin: 0;
+    text-transform: uppercase;
+    &:after {
+      content: url("../images/title-wave-min.png");
+      display: block;
+    }
+  }
+  &__desc {
+    text-align: center;
+    margin: 0 auto 30px auto;
+    width: 40%;
+    line-height: $line-height-min;
+  }
+  .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 170px;
+      &__image {
+        width: 5%;
+      }
+      &__desc {
+        width: 83%;
+        line-height: $line-height;
+        .title {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      &__wrap {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        justify-content: space-between;
+      }
+      &:last-child {
+        height: auto;
+      }
+    }
+  }
+}

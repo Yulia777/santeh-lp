@@ -1,9 +1,10 @@
 import React from 'react';
 import Header from './header/header.jsx';
-import Footer from './footer/footer';
 import CompanyFigures from './main/company-figures/company-figures';
 import Catalog from './main/catalog/catalog';
 import Range from '../components/main/range/range';
+import Advantages from '../components/main/advantages/advantages';
+import Clients from '../components/main/clients/clients';
 
 
 
@@ -16,8 +17,9 @@ class MyApp extends React.Component{
                     <CompanyFigures/>
                     <Catalog/>
                     <Range/>
+                    <Advantages/>
+                    <Clients/>
                 </main>
-                <Footer/>
             </div>
         )
     }

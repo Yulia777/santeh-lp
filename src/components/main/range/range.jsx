@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import FormRange from '../../main/range/range';
+import FormRange from '../../elements/forms/form-range/form-range';
 
 class Range extends Component{
     render() {

@@ -1,6 +1,8 @@
-.company-figures {
+.range {
   padding: $padding-screen;
   color: $light-text;
+  text-align: center;
+  background: url("../../assets/images/fon-four-min.png")no-repeat;
   &__title {
     font-size: $subtitle;
     text-align: center;
@@ -8,9 +10,24 @@
     margin: 0;
     padding: $titles;
     text-transform: uppercase;
-    &:after {
-      content: url("../images/title-wave-min.png");
-      display: block;
-    }
+  }
+  input[type="text"] {
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 50px;
+    margin: 30px 20px 0 0;
+    padding: 14px 25px;
+    color: #fff;
+    &::-webkit-input-placeholder{color:$light-text;}
+    &::-moz-placeholder{color:$light-text;}
+    &:-moz-placeholder{color:$light-text;}
+    &:-ms-input-placeholder{color:$light-text;}
+  }
+  &__desc {
+    font-size: 30px;
+    font-family: $light;
+    line-height: $line-height;
+    width: 80%;
+    margin: auto;
   }
 }
